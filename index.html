@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Responsive Image Gallery</h1>
+    <div class="controls">
+      <div class="categories">
+        <button class="cat-btn active" data-cat="all">All</button>
+        <button class="cat-btn" data-cat="nature">Nature</button>
+        <button class="cat-btn" data-cat="architecture">Architecture</button>
+        <button class="cat-btn" data-cat="people">People</button>
+      </div>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="none">Normal</button>
+        <button class="filter-btn" data-filter="grayscale">Grayscale</button>
+        <button class="filter-btn" data-filter="sepia">Sepia</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery" id="gallery">
+      <figure class="card" data-cat="nature">
+        <img src="https://picsum.photos/id/1018/800/600" alt="Mountain lake">
+        <figcaption>Mountain lake</figcaption>
+      </figure>
+      <figure class="card" data-cat="architecture">
+        <img src="https://picsum.photos/id/1011/800/600" alt="City skyline">
+        <figcaption>City skyline</figcaption>
+      </figure>
+      <figure class="card" data-cat="people">
+        <img src="https://picsum.photos/id/1005/800/600" alt="Portrait">
+        <figcaption>Portrait</figcaption>
+      </figure>
+      <figure class="card" data-cat="nature">
+        <img src="https://picsum.photos/id/1025/800/600" alt="Eagle">
+        <figcaption>Eagle</figcaption>
+      </figure>
+      <figure class="card" data-cat="architecture">
+        <img src="https://picsum.photos/id/1031/800/600" alt="Bridge">
+        <figcaption>Bridge</figcaption>
+      </figure>
+      <figure class="card" data-cat="people">
+        <img src="https://picsum.photos/id/1062/800/600" alt="Street portrait">
+        <figcaption>Street portrait</figcaption>
+      </figure>
+      <figure class="card" data-cat="nature">
+        <img src="https://picsum.photos/id/1043/800/600" alt="Forest path">
+        <figcaption>Forest path</figcaption>
+      </figure>
+      <figure class="card" data-cat="architecture">
+        <img src="https://picsum.photos/id/1056/800/600" alt="Old building">
+        <figcaption>Old building</figcaption>
+      </figure>
+      <figure class="card" data-cat="people">
+        <img src="https://picsum.photos/id/1027/800/600" alt="Smiling">
+        <figcaption>Smiling</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Close">×</button>
+    <button class="lb-prev" aria-label="Previous">‹</button>
+    <div class="lb-content">
+      <img src="" alt="" id="lb-img">
+      <p id="lb-caption"></p>
+    </div>
+    <button class="lb-next" aria-label="Next">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
